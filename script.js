@@ -16,15 +16,34 @@ function el(tag, opts = {}) {
     return n;
 }
 
-// Load data and render
-fetch('data.json').then(r => r.json()).then(data => {
+// Load data and render. Try fetching data.json first; if it fails (file:// or CORS),
+// fall back to the embedded JSON in the page (id="data-fallback").
+function loadData() {
+    return fetch('data.json').then(r => {
+        if (!r.ok) throw new Error('Fetch failed: ' + r.status);
+        return r.json();
+    }).catch(fetchErr => {
+        console.warn('fetch(data.json) failed, trying embedded fallback:', fetchErr);
+        const fallback = document.getElementById('data-fallback');
+        if (fallback) {
+            try {
+                return Promise.resolve(JSON.parse(fallback.textContent));
+            } catch (e) {
+                return Promise.reject(e);
+            }
+        }
+        return Promise.reject(fetchErr);
+    });
+}
+
+loadData().then(data => {
     renderAbout(data);
     renderSkills(data.skills || []);
     renderProjects(data.projects || []);
     renderLinks(data.links || {});
     setupObservers();
     setupNavActive();
-}).catch(err => console.error('Failed to load data.json', err));
+}).catch(err => console.error('Failed to load data from data.json or fallback:', err));
 
 function renderAbout(data) {
     const c = document.getElementById('about-container');
