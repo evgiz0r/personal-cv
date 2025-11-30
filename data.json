@@ -1,0 +1,24 @@
+{
+  "name": "Evgeni Bourd",
+  "title": "Software Architect | Backend Engines & Language Design",
+  "bio": "I design backend engines and languages, lead engineering initiatives, and enjoy chess and 3D printing in my spare time.",
+  "skills": [
+    { "name": "Backend engines & language design", "level": 5, "desc": "Expert in building backend engines and language design." },
+    { "name": "Software design", "level": 4, "desc": "Some expertise in system and software architecture." },
+    { "name": "Python", "level": 2, "desc": "Beginner/intermediate — actively coding and building practical experience." },
+    { "name": "C / C++ / Java", "level": 2, "desc": "Solid working knowledge across these languages; comfortable with core concepts." },
+    { "name": "AI", "level": 3, "desc": "Basic knowledge of AI concepts and experience coordinating AI-related work." },
+    { "name": "Constraint solving", "level": 4, "desc": "Strong practical experience with constraint solving techniques." },
+    { "name": "Project management", "level": 4, "desc": "Competent project management and coordination skills." },
+    { "name": "Chess (hobby)", "level": 5, "desc": "Master-level chess player (hobby)." },
+    { "name": "3D printing (hobby)", "level": 5, "desc": "Master-level experience with 3D printing and design." },
+    { "name": "Web/backend (outside own projects)", "level": 1, "desc": "Basic exposure to web/backend beyond personal projects; open to learning more." }
+  ],
+  "projects": [],
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/evgeni-bourd-08b82618/",
+    "thingiverse": "https://www.thingiverse.com/evgiz0r",
+    "chess": "https://www.chess.com/member/evgiz0r",
+    "github": "https://github.com/evgiz0r"
+  }
+}

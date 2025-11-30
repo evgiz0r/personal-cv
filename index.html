@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal CV - Portfolio</title>
+    <title>Evgeni Bourd — Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Evgeni Bourd — Software Architect, backend engines & language design, chess and 3D printing enthusiast">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-brand">Portfolio</div>
+            <div class="nav-brand">Evgeni Bourd</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -20,178 +21,39 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- About -->
     <section id="about" class="hero">
-            <div class="container">
-            <h1>Evgeni Bourd</h1>
-            <p class="subtitle">Software Architect | Backend Engines &amp; Language Design</p>
-            <p class="bio">I design backend engines and languages, lead engineering initiatives, and enjoy chess and 3D printing in my spare time.</p>
+        <div class="container" id="about-container">
+            <!-- Rendered from data.json -->
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills -->
     <section id="skills" class="skills">
         <div class="container">
             <h2>Skills</h2>
-            <!-- Interactive skill boxes: click a box to toggle a short description -->
-            <div class="skills-grid">
-                <!-- Backend engines & language design -->
-                <div class="skill-card" tabindex="0">
-                    <div class="skill-header">
-                        <h3>Backend engines & language design</h3>
-                        <span class="skill-score">5/5</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-bar" data-percent="100%"></div>
-                    </div>
-                    <div class="skill-desc">Expert in building backend engines and language design.</div>
-                </div>
-
-                <!-- Software design -->
-                <div class="skill-card" tabindex="0">
-                    <div class="skill-header">
-                        <h3>Software design</h3>
-                        <span class="skill-score">4/5</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-bar" data-percent="80%"></div>
-                    </div>
-                    <div class="skill-desc">Some expertise in system and software architecture.</div>
-                </div>
-
-                <!-- Python -->
-                <div class="skill-card" tabindex="0">
-                    <div class="skill-header">
-                        <h3>Python</h3>
-                        <span class="skill-score">2/5</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-bar" data-percent="40%"></div>
-                    </div>
-                    <div class="skill-desc">Beginner/intermediate — actively coding and building practical experience.</div>
-                </div>
-
-                <!-- C / C++ / Java -->
-                <div class="skill-card" tabindex="0">
-                    <div class="skill-header">
-                        <h3>C / C++ / Java</h3>
-                        <span class="skill-score">2/5</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-bar" data-percent="40%"></div>
-                    </div>
-                    <div class="skill-desc">Solid working knowledge across these languages; comfortable with core concepts.</div>
-                </div>
-
-                <!-- AI -->
-                <div class="skill-card" tabindex="0">
-                    <div class="skill-header">
-                        <h3>AI</h3>
-                        <span class="skill-score">3/5</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-bar" data-percent="60%"></div>
-                    </div>
-                    <div class="skill-desc">Basic knowledge of AI concepts and experience coordinating AI-related work.</div>
-                </div>
-
-                <!-- Constraint Solving -->
-                <div class="skill-card" tabindex="0">
-                    <div class="skill-header">
-                        <h3>Constraint solving</h3>
-                        <span class="skill-score">4/5</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-bar" data-percent="80%"></div>
-                    </div>
-                    <div class="skill-desc">Strong practical experience with constraint solving techniques.</div>
-                </div>
-
-                <!-- Project Management -->
-                <div class="skill-card" tabindex="0">
-                    <div class="skill-header">
-                        <h3>Project management</h3>
-                        <span class="skill-score">4/5</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-bar" data-percent="80%"></div>
-                    </div>
-                    <div class="skill-desc">Competent project management and coordination skills.</div>
-                </div>
-
-                <!-- Chess (hobby) -->
-                <div class="skill-card" tabindex="0">
-                    <div class="skill-header">
-                        <h3>Chess (hobby)</h3>
-                        <span class="skill-score">5/5</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-bar" data-percent="100%"></div>
-                    </div>
-                    <div class="skill-desc">Master-level chess player (hobby).</div>
-                </div>
-
-                <!-- 3D Printing (hobby) -->
-                <div class="skill-card" tabindex="0">
-                    <div class="skill-header">
-                        <h3>3D printing (hobby)</h3>
-                        <span class="skill-score">5/5</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-bar" data-percent="100%"></div>
-                    </div>
-                    <div class="skill-desc">Master-level experience with 3D printing and design.</div>
-                </div>
-
-                <!-- Web/backend outside own projects -->
-                <div class="skill-card" tabindex="0">
-                    <div class="skill-header">
-                        <h3>Web/backend (outside own projects)</h3>
-                        <span class="skill-score">1/5</span>
-                    </div>
-                    <div class="skill-level">
-                        <div class="skill-bar" data-percent="20%"></div>
-                    </div>
-                    <div class="skill-desc">Basic exposure to web/backend beyond personal projects; open to learning more.</div>
-                </div>
+            <div id="skills-container" class="skills-grid">
+                <!-- Rendered from data.json -->
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects -->
     <section id="projects" class="projects">
         <div class="container">
             <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card" style="text-align:center;">
-                    <h3>More projects coming soon</h3>
-                    <p class="project-description">New projects will appear here as I build them.</p>
-                </div>
+            <div id="projects-container" class="projects-grid">
+                <!-- Rendered from data.json -->
             </div>
         </div>
     </section>
 
-    <!-- Links Section -->
+    <!-- Links -->
     <section id="links" class="links">
         <div class="container">
             <h2>Connect With Me</h2>
-            <div class="links-grid">
-                <a href="https://www.linkedin.com/in/evgeni-bourd-08b82618/" class="link-card" target="_blank" rel="noopener">
-                    <h3>LinkedIn</h3>
-                    <p>Professional profile</p>
-                </a>
-                <a href="https://www.thingiverse.com/evgiz0r" class="link-card" target="_blank" rel="noopener">
-                    <h3>Thingiverse</h3>
-                    <p>3D designs & models</p>
-                </a>
-                <a href="https://www.chess.com/member/evgiz0r" class="link-card" target="_blank" rel="noopener">
-                    <h3>Chess.com</h3>
-                    <p>Chess profile</p>
-                </a>
-                <a href="https://github.com/evgiz0r" class="link-card" target="_blank" rel="noopener">
-                    <h3>GitHub</h3>
-                    <p>All my repositories</p>
-                </a>
+            <div id="links-container" class="links-grid">
+                <!-- Rendered from data.json -->
             </div>
         </div>
     </section>
@@ -199,7 +61,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <p>&copy; 2025 Evgeni Bourd. All rights reserved.</p>
         </div>
     </footer>
 
