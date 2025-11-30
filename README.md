@@ -3,8 +3,8 @@
 This repository contains the source code for my personal portfolio website, hosted on GitHub Pages.  
 The site showcases who I am, my skills, my projects, and links to my profiles across the web.
 
-🔗 **Live Site:**  
-https://evgiz0r.github.io/evgeni-portfolio
+[🔗 **Live Site:**  
+https://evgiz0r.github.io/evgeni-portfolio](https://evgiz0r.github.io/personal-cv/)
 
 ---
 
